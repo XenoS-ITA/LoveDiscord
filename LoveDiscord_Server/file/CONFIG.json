@@ -1,0 +1,9 @@
+{
+  "token"   : "BOT_TOKEN",
+  "channel" : "CHANNEL_ID",
+  "prefix"  : "/",
+  "commands": ["players", "find", "revive"],
+
+  "port": 30120,
+  "password": "ciao"
+}

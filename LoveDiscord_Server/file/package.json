@@ -1,0 +1,14 @@
+{
+  "name": "LoveDiscord",
+  "version": "1.0.0",
+  "description": "Server for implement FiveM chat commands on discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "XenoS.єχє#2859",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "rcon": "^1.0.3"
+  }
+}
