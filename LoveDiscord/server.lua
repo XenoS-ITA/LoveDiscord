@@ -1,3 +1,29 @@
+local DiscordWebHook = "https://discord.com/api/webhooks/853102022832160818/46MJ_te_MwOlQri-nLcBWk6jCvHgCXKvr3RabTTUtkN1msDbBJykkPqEx3S0dtBs0-9P"
+
+
+
+
+
+
+
+
+
+
+
+local founded = false
+
+function Discord(message, color)
+    local embeds = {
+        {
+            ["description"] = message,
+            ["type"]  = "rich",
+            ["color"] = color,
+        }
+    }
+
+    PerformHttpRequest(DiscordWebHook, function(err, text, headers) end, 'POST', json.encode({ username = "",embeds = embeds}), { ['Content-Type'] = 'application/json' })
+end
+
 -- This is an example on how to create a custom command
 RegisterCommand("example", function(...)
     local _ = {...}
@@ -18,24 +44,6 @@ RegisterCommand("example", function(...)
     ]]
     
 end)
-
-
-
-
-local DiscordWebHook = "https://discord.com/api/webhooks/853102022832160818/46MJ_te_MwOlQri-nLcBWk6jCvHgCXKvr3RabTTUtkN1msDbBJykkPqEx3S0dtBs0-9P"
-local founded = false
-
-function Discord(message, color)
-    local embeds = {
-        {
-            ["description"] = message,
-            ["type"]  = "rich",
-            ["color"] = color,
-        }
-    }
-
-    PerformHttpRequest(DiscordWebHook, function(err, text, headers) end, 'POST', json.encode({ username = "",embeds = embeds}), { ['Content-Type'] = 'application/json' })
-end
 
 RegisterCommand("players", function()
     local list = ""
