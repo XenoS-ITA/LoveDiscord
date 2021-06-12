@@ -5,5 +5,5 @@
   "commands": ["players", "find", "revive"],
 
   "port": 30120,
-  "password": "ciao"
+  "password": "YOUR_RCON_PASSWORD"
 }
